@@ -164,11 +164,11 @@ if uploaded_file is not None:
 #         showlegend=True
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=False)
 
     # Cluster summary table - full width
     st.markdown("### Cluster Summary")
-    st.dataframe(cluster_summary, use_container_width=True)
+    st.dataframe(cluster_summary, use_container_width=False)
 
 else:
     st.info("Please upload a CSV file to continue.")
