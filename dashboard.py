@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 # ------------------------
 # Page layout and CSS
 # ------------------------
-# st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 # Custom padding via CSS (left 10px, right 50px, top 10px)
 st.markdown(
