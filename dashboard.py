@@ -79,6 +79,7 @@ if uploaded_file is not None:
         avg_dist_transacting=('dist_from_wh', lambda x: x[wh_data.loc[x.index,'cx_status']=='Transacting'].mean()),
         avg_dist_nontransacting=('dist_from_wh', lambda x: x[wh_data.loc[x.index,'cx_status']=='Non-Transacting'].mean())
     ).reset_index()
+    cluster_summary=cluster_summary[['k_means','transacting_count','avg_pgmv_transacting','avg_pgmv_nontransacting','avg_dist_transacting','avg_dist_nontransacting']]
 
     # ------------------------
     # Plotly Map
